@@ -14,13 +14,15 @@ export const Footer = () => {
 					/>
 				</Link>
 				<p>&copy;Mr Jiks 2022.</p>
+
+				<div className='nav-links'>
+					<p className='drink-data'>Credit:</p>
+					<span>
+						<a href='https://www.thecocktaildb.com/'>The cocktail database</a>
+					</span>
+					|| <p className='react-love'>Made in ❤️ with React JS</p>
+				</div>
 			</div>
-			<ul className='nav-links'>
-				<p className='drink-data'>Credit:</p>
-				<span>
-					<a href='https://www.thecocktaildb.com/'>The cocktail database</a>
-				</span>
-			</ul>
 		</footer>
 	);
 };
