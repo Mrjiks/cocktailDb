@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
 	const [searchTerm, setSearchTerm] = useState('ma');
 	const [cocktails, setCocktails] = useState([]);
 
+	// using useCallback hook for fetching only when searchTerm changes
 	const fetchDrinks = useCallback(async () => {
 		setLoading(true);
 		try {
@@ -20,6 +21,7 @@ const AppProvider = ({ children }) => {
 				const newCocktails = drinks.map(item => {
 					const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } =
 						item;
+					// renaming drinks property for an easy use
 					return {
 						id: idDrink,
 						name: strDrink,
@@ -48,7 +50,8 @@ const AppProvider = ({ children }) => {
 		</AppContext.Provider>
 	);
 };
-// make sure use
+
+//custom useGlobalContext for easy use
 export const useGlobalContext = () => {
 	return useContext(AppContext);
 };

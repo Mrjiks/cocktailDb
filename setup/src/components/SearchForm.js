@@ -6,15 +6,16 @@ const SearchForm = () => {
 
 	const searchValue = React.useRef('');
 
-	React.useEffect(() => {
-		searchValue.current.focus();
-	}, []);
+	// React.useEffect(() => {
+	// 	searchValue.current.focus();
+	// }, []);
 
 	const handleSubmit = e => {
 		e.preventDefault();
 	};
 
 	const searchCocktail = () => {
+		// set the value for the fetch query term in context api
 		setSearchTerm(searchValue.current.value);
 	};
 	return (
@@ -31,6 +32,7 @@ const SearchForm = () => {
 						ref={searchValue}
 						placeholder='&#128269;'
 						onChange={searchCocktail}
+						autoFocus
 					/>
 				</div>
 			</form>

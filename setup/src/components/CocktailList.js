@@ -12,7 +12,7 @@ const CocktailList = () => {
 	if (cocktails.length < 1) {
 		return (
 			<h2 className='section-title'>
-				no cocktail found.please, try other search terms.
+				no cocktail found, please try other search terms.
 			</h2>
 		);
 	}
