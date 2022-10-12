@@ -15,12 +15,12 @@ export const Footer = () => {
 				</Link>
 				<p>&copy;Mr Jiks 2022.</p>
 
-				<div className='nav-links'>
-					<p className='drink-data'>Credit:</p>
+				<div className='footer-links'>
 					<span>
+						<span className='drink-data'>Credit:</span>
 						<a href='https://www.thecocktaildb.com/'>The cocktail database</a>
 					</span>
-					|| <p className='react-love'>Made in ❤️ with React JS</p>
+					<p>Made in ❤️ with React JS</p>
 				</div>
 			</div>
 		</footer>

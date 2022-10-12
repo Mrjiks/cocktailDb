@@ -192,12 +192,20 @@ About
 	width: var(--smallWidth);
 	margin: 0 auto;
 	padding: 2rem;
-	max-width: var(--fullWidth);
+	/* max-width: var(--fullWidth); */
 	background-color: var(--darkGrey);
 }
 
 .footer-section p {
 	margin-top: 1rem;
+}
+.footer-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: var(--smallWidth);
+	margin: 0 auto;
+	max-width: var(--fullWidth);
 }
 
 .react-love {
